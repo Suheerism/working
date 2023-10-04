@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>TWSTUDY</title>
+</head>
+
+<body>
+    <button class="btn btn-light offcanvas-btn" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-gear"></i></button>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <h3 class="offcanvas-body-title text-center mb-4">Style Switcher</h3>
+            <div class="ThemeBackground">
+                <div class="form-check form-switch">
+                    <input class="form-check-input my-2" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Light Mode</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="container" id="main-container">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><span>TWS</span>TUDY</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Course
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="courses.html">Course</a></li>
+                                    <li><a class="dropdown-item" href="coursesDetail.html">Course Details</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Pages
+                                </button>
+                                <ul class="dropdown-menu my-0">
+                                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                    <li><a class="dropdown-item" href="SignUp.html">Sign up</a></li>
+                                </ul>
+                            </div>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <section class="login-section-one text-center">
+
+                <!-- breadcrumb -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb p-4 ">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item text-light active" aria-current="page">Signup</li>
+                    </ol>
+                </nav>
+
+                <div class="SignUp-section-one-content container-background">
+                    <form class="SignUp-section-form">
+                        <h3>Create Your Account</h3>
+                        <input class="w-100 rounded" type="text" id="username" placeholder="Full Name">
+                        <input class="w-100 rounded" type="email" id="email" placeholder="Email">
+                        <input class="w-100 rounded" type="password" id="password" placeholder="Password">
+                        <button class="btn btn-SignUp  w-100">Sign Up</button>
+                        <p>Already Have An Account?<span> <a href="login.html">Log In</a></span></p>
+
+
+                    </form>
+                </div>
+
+
+
+
+            </section>
+
+            <!-- Footer -->
+        <footer class="text-center text-lg-start text-light" id="footer">
+            <section class="pt-3">
+                <div class="container text-start mt-5 mx-auto footer-container">
+                    <div class="row footer-row mt-3">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4"><span>TWS</span>TUDY</h6>
+                            <p><a href="#!" class="text-reset text-decoration-none">About</a></p>
+                            <p><a href="#!" class="text-reset text-decoration-none">What We Offer</a></p>
+                            <p><a href="#!" class="text-reset text-decoration-none">Careers</a></p>
+                            <p><a href="#!" class="text-reset text-decoration-none">Certificates</a></p>
+                            <p><a href="#!" class="text-reset text-decoration-none">Blog</a></p>
+                        </div>
+
+                        <!-- Grid column -->
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Learning</h6>
+                            <p><a href="#!" class="text-reset text-decoration-none">Get The App</a></p>
+                            <p><a href="#!" class="text-reset text-decoration-none">Testimonial</a></p>
+                            <p><a href="#!" class="text-reset text-decoration-none">Pricing</a></p>
+                            <p><a href="#!" class="text-reset text-decoration-none">Faq</a></p>
+                        </div>
+
+                        <!-- Grid column -->
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">More</h6>
+                            <p><a href="#!" class="text-reset text-decoration-none">Affiliates</a></p>
+                            <p><a href="#!" class="text-reset text-decoration-none">Become A Course Creator</a></p>
+                            <p><a href="#!" class="text-reset text-decoration-none">Trainnig Webinars</a></p>
+                            <p><a href="#!" class="text-reset text-decoration-none">Free Personality text</a></p>
+                            <p><a href="#!" class="text-reset text-decoration-none">Help and Support</a></p>
+                        </div>
+
+                        <!-- Grid column -->
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Get In Touch</h6>
+                            <p><i class="fa fa-facebook me-3"></i>Facebook</p>
+                            <p><i class="fa-brands fa-instagram me-3"></i>Instagram</p>
+                            <p><i class="fa-brands fa-youtube me-3"></i>YouTube</p>
+                            <p><i class="fa-brands fa-linkedin me-3"></i>LinkedIn</p>
+                            <p><i class="fa-brands fa-twitter me-3" style="color: #ffffff;"></i>Twitter</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Copyright -->
+            <div class="text-center p-4 copyright" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2023 Copyright:
+                <a class="text-reset fw-bold text-decoration-none" href="#">Suheer Zahid</a>
+            </div>
+        </footer>
+
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/04597dd294.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
